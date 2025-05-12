@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UP SHS | ABOUT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+ 
+
+  <style>
+    :root {
+      --blue-black: #0c1a2b;
+      --cream: #f9f4e8;
+      --main-blue: #0066cc;
+    }
+
+    html, body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--cream);
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    .navbar-toggler {
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    .navbar .nav-link {
+      position: relative;
+      padding-bottom: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #FFD700;
+      transition: width 0.3s;
+    }
+
+    .navbar .nav-link:hover::after,
+    .navbar .nav-link.active::after {
+      width: 100%;
+    }
+
+
+    .navbar {
+      background-color: #0f0c20 !important;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: white !important;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: #FFD700 !important;
+      /* Yellow */
+    }
+
+    .navbar .nav-item {
+      margin-left: 15px;
+    }
+
+    .navbar .nav-item:not(:first-child) {
+      margin-left: 15px;
+    }
+    
+
+    .hero {
+      position: relative;
+      background: url('images/banner.jpg') no-repeat center center/cover;
+      height: 45vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* Slight dark overlay */
+      z-index: 1;
+    }
+    
+    .hero .content {
+      z-index: 2;
+      position: relative;
+    }
+    
+
+    .btn-main {
+      background-color: var(--main-blue);
+      color: white;
+      border-radius: 30px;
+      padding: 10px 30px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-main:hover {
+      background-color: white;
+      color: var(--main-blue);
+      border: 1px solid var(--main-blue);
+    }
+
+    .history-mission-section {
+  background: linear-gradient(to right, #fef9f3, #fffefc);
+  color: #2d2d2d;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-style {
+  color: #f59e0b;
+  font-size: 1.6rem;
+}
+
+.history-mission-section .lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.highlight {
+  color: #eab308;
+  font-weight: bold;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.main {
+  padding: 60px 0;
+}
+
+
+
+    footer {
+      background: #0f0c20;
+      color: #fff;
+      padding: 30px 0;
+    }
+    
+        footer a {
+          color: #ccc;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+    
+        footer a:hover {
+          color: #ffc107;
+        }
+    
+        footer ul li {
+          margin-bottom: 8px;
+        }
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/University Practice logo.png" alt="UPSHS Logo" width="50" height="50"><br>
+        <span class="text-white">U.P.S.H.S</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Hero -->
+<div class="main">
+  <section class="contact-hero text-white text-center py-5"
+ style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/banner.jpg') center/cover no-repeat;">
+    <h1 data-aos="fade-up" class="display-4 fw-bold" style="color: #ffc107;">About Our School</h1>
+  </section>
+  </div>
+
+  <!-- Overview Section -->
+  <section class="history-mission-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
+        <h2 class="section-title">
+          <i class="fas fa-school icon-style"></i> Our History & Mission
+        </h2>
+        <p class="lead mt-3">
+          Established in <strong>2025</strong>, <span class="highlight">U.P.S.H.S</span> is a distinguished Senior High School located in Ghana.
+          Our mission is to nurture <strong>disciplined, knowledgeable, and innovative leaders</strong> for the future through academic excellence and character development.
+        </p>
+      </div>
+
+      <div class="col-md-6 text-center" data-aos="fade-left">
+        <img src="images/pic1.jpeg" alt="History and Mission" class="img-fluid rounded shadow" />
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  <!-- Core Values -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Our Core Values</h2>
+      <div class="row text-center">
+        <div class="col-md-4" data-aos="fade-up">
+          <i class="fas fa-handshake value-icon mb-3"></i>
+          <h5>Integrity</h5>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-users value-icon mb-3"></i>
+          <h5>Respect</h5>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-lightbulb value-icon mb-3"></i>
+          <h5>Innovation</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Headmaster Message -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5" data-aos="fade-right">
+          <img src="images/pic1.jpeg" alt="Headmaster" class="img-fluid rounded">
+        </div>
+        <div class="col-md-7" data-aos="fade-left">
+          <h2 class="section-title">A Message from the Headmaster</h2>
+          <p>Welcome to UNIVERSITY PRACTICE SENIOR HIGH SCHOOL. We take pride in shaping the future of Ghana through quality education, discipline, and innovation. Our school community is dedicated to providing a supportive and inspiring learning environment for every student.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accreditation Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Accreditations & Affiliations</h2>
+      <div class="row text-center">
+        <div class="col-md-4" data-aos="fade-up">
+          <i class="fas fa-certificate value-icon mb-3"></i>
+          <h5>GES Recognition</h5>
+          <p>Officially recognized by the Ghana Education Service as a top-tier academic institution.</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-globe value-icon mb-3"></i>
+          <h5>WAEC Center</h5>
+          <p>Official WAEC Examination Center for Senior High School candidates.</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-handshake value-icon mb-3"></i>
+          <h5>Strategic Partnerships</h5>
+          <p>Collaborating with local and international institutions for growth and development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Quick Statistics Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 data-aos="fade-left">Quick Stats</h2>
+        <div class="stat-item" data-aos="zoom-in-up">
+        
+      <div class="row text-center">
+        <div class="col-md-3" data-aos="fade-up">
+          <i class="fas fa-users value-icon mb-3"></i>
+          <h3>1200+</h3>
+          <p>Students</p>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-chalkboard-teacher value-icon mb-3"></i>
+          <h3>75+</h3>
+          <p>Teachers</p>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-book-open value-icon mb-3"></i>
+          <h3>30+</h3>
+          <p>Subjects</p>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-calendar-check value-icon mb-3"></i>
+          <h3>50+</h3>
+          <p>Years of Excellence</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">What Our Community Says</h2>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="testimonial">
+            <blockquote>"The best school for nurturing talent and discipline!"</blockquote>
+            <p>- Former Student</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial">
+            <blockquote>"An excellent learning environment for students to grow."</blockquote>
+            <p>- Parent</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial">
+            <blockquote>"Highly dedicated staff and top-notch facilities."</blockquote>
+            <p>- Teacher</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Why Choose Us -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Why Choose SCHOOL NAME?</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="p-4 bg-white shadow rounded text-center">
+            <i class="fas fa-chalkboard-teacher fa-2x text-primary mb-3"></i>
+            <h5>Qualified Educators</h5>
+            <p>Experienced staff committed to your child’s growth and excellence.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="p-4 bg-white shadow rounded text-center">
+            <i class="fas fa-school fa-2x text-primary mb-3"></i>
+            <h5>Modern Facilities</h5>
+            <p>Well-equipped labs, library, ICT center and serene learning environment.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="p-4 bg-white shadow rounded text-center">
+            <i class="fas fa-award fa-2x text-primary mb-3"></i>
+            <h5>Excellent Track Record</h5>
+            <p>Consistent academic performance and excellence in co-curricular activities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Call to Action -->
+<section class="py-5 text-center bg-primary text-light">
+    <h2 class="display-4 mb-4">Ready to Be Part of Our Community?</h2>
+    <p class="mb-4">Join us in shaping the future with education that empowers and inspires.</p>
+    <a href="admissions.html" class="btn btn-warning btn-lg">Apply Now</a>
+  </section>
+
+ 
+  <!-- Footer -->
+  <footer class="text-light pt-5 pb-4">
+    <div class="container text-md-start">
+      <div class="row">
+        <!-- Company Info -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-warning"><i class="fas fa-school me-2"></i>University Practice SHS</h5>
+          <p><i class="fas fa-lightbulb me-2"></i>University Practice Senior High School — Committed to excellence and service to the community.</p>
+          <br>
+          <p><i class="fas fa-balance-scale me-2"></i>Motto: Service to the Community</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h5 class="text-warning"><i class="fas fa-link me-2"></i>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-home me-2"></i><a href="index.html">Home</a></li>
+            <li><i class="fas fa-user me-2"></i><a href="about.html">About</a></li>
+            <li><i class="fas fa-book me-2"></i><a href="academics.html">Academics</a></li>
+            <li><i class="fas fa-user-graduate me-2"></i><a href="admissions.html">Admissions</a></li>
+            <li><i class="fas fa-newspaper me-2"></i><a href="news.html">News</a></li>
+            <li><i class="fas fa-images me-2"></i><a href="gallery.html">Gallery</a></li>
+            <li><i class="fas fa-envelope me-2"></i><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-warning"><i class="fas fa-phone-alt me-2"></i>Contact</h5>
+          <p><i class="fas fa-map-marker-alt me-2"></i>Cape Coast, Ghana</p>
+          <p><i class="fas fa-phone me-2"></i>0242043499 / 0540380460</p>
+          <a href="#">
+            <p><i class="fas fa-envelope me-2"></i>info@upshs.com</p>
+          </a>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-warning"><i class="fas fa-newspaper me-2"></i>Newsletter</h5>
+
+          <form id="subscribeForm">
+            <div class="mb-2">
+              <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">
+              <i class="fas fa-paper-plane me-1"></i>Subscribe
+            </button>
+          </form>
+
+          <!-- Always render this element for JS to access -->
+          <p id="subscribeMessage" class="mt-2" style="display: none;"></p>
+
+          <h6 class="text-warning mt-4">Follow Us</h6>
+          <div>
+            <a href="https://facebook.com/p/Boss-Track-Engineering-Services-100063743118363/?_rdc=1&_rdr#"
+              class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://gh.linkedin.com/in/benjamin-mensah-709b7bb6" class="text-light"><i
+                class="fab fa-linkedin fa-lg"></i></a>
+          </div>
+        </div>
+
+        <script>
+          document.getElementById("subscribeForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const emailInput = this.querySelector("input[name='email']");
+            const successMessage = document.getElementById("subscribeMessage");
+            const email = emailInput.value.trim();
+
+            if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+              successMessage.textContent = "Please enter a valid email.";
+              successMessage.className = "mt-2 text-danger";
+              successMessage.style.display = "block";
+              return;
+            }
+
+            // Feedback: processing
+            successMessage.textContent = "Subscribing...";
+            successMessage.className = "mt-2 text-info";
+            successMessage.style.display = "block";
+
+            try {
+              const res = await fetch("subscribe.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: `email=${encodeURIComponent(email)}`
+              });
+
+              const text = await res.text(); // safer than res.json() in case of malformed response
+              let result;
+              try {
+                result = JSON.parse(text);
+              } catch {
+                throw new Error("Invalid JSON");
+              }
+
+              successMessage.textContent = result.message;
+              successMessage.className = `mt-2 ${result.status === "success" ? "text-success" : "text-danger"}`;
+
+              if (result.status === "success") {
+                emailInput.value = "";
+              }
+
+            } catch (err) {
+              console.error("Error:", err);
+              successMessage.textContent = "Something went wrong. Please try again.";
+              successMessage.className = "mt-2 text-danger";
+            }
+
+            setTimeout(() => {
+              successMessage.style.display = "none";
+            }, 4000);
+          });
+        </script>
+      </div>
+
+      <hr class="bg-warning">
+
+      <div class="d-md-flex justify-content-between align-items-center mt-3">
+        <p>&copy; 2025 University Practice SHS. All rights reserved.</p>
+        <div>
+          <a href="#" class="text-light me-3"><i class="fas fa-shield-alt me-1"></i>Privacy Policy</a>
+          <a href="#" class="text-light"><i class="fas fa-file-contract me-1"></i>Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

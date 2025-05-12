@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UP SHS | NEWS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+ 
+
+  <style>
+    :root {
+      --blue-black: #0c1a2b;
+      --cream: #f9f4e8;
+      --main-blue: #0066cc;
+    }
+
+    html, body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--cream);
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    .navbar-toggler {
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    .navbar .nav-link {
+      position: relative;
+      padding-bottom: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #FFD700;
+      transition: width 0.3s;
+    }
+
+    .navbar .nav-link:hover::after,
+    .navbar .nav-link.active::after {
+      width: 100%;
+    }
+
+
+    .navbar {
+      background-color: #0f0c20 !important;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: white !important;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: #FFD700 !important;
+      /* Yellow */
+    }
+
+    .navbar .nav-item {
+      margin-left: 15px;
+    }
+
+    .main {
+      padding: 60px 0;
+    }
+
+    .navbar .nav-item:not(:first-child) {
+      margin-left: 15px;
+    }
+
+    .news-hero {
+        background: linear-gradient(to right, #001f3f, #003366);
+      }
+      
+      .card-title {
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+      
+      .card:hover {
+        transform: translateY(-5px);
+        transition: 0.3s ease-in-out;
+      }
+      
+      .pagination .page-link {
+        color: #000;
+      }
+      
+      .pagination .page-item.active .page-link {
+        background-color: #FFD700;
+        border: none;
+        color: #000;
+      }
+
+      .news-img {
+  height: 200px; /* or any height you prefer */
+  object-fit: cover;
+  width: 100%; /* ensures it fills the column */
+}
+
+      
+
+      footer {
+        background: #0f0c20;
+        color: #fff;
+        padding: 30px 0;
+      }
+      
+          footer a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+          }
+      
+          footer a:hover {
+            color: #ffc107;
+          }
+      
+          footer ul li {
+            margin-bottom: 8px;
+          }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/University Practice logo.png" alt="UPSHS Logo" width="50" height="50"><br>
+        <span class="text-white">U.P.S.H.S</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- ======= News Page ======= -->
+  <div class="main">
+<section class="contact-hero text-white text-center py-5"
+ style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/banner.jpg') center/cover no-repeat;">
+    <div class="container" data-aos="fade-down">
+      <h1 class="display-4 fw-bold" style="color: #ffc107;">Latest News & Events</h1>
+      <p class="lead">Stay updated with what's happening in our school community.</p>
+    </div>
+  </section>
+  </div>
+  
+  <section class="news-section py-5">
+    <div class="container">
+      <div class="row" data-aos="fade-up" data-aos-delay="200">
+        
+        <!-- Featured News -->
+        <div class="col-md-12 mb-5">
+          <div class="card border-0 shadow-lg">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/sci.jpeg" class="img-fluid rounded-start news-img" alt="Featured News">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title text-warning">[Featured] Science Fair 2025: Innovation on Display</h5>
+                  <p class="card-text">Students showcased outstanding projects in this year's science fair. A celebration of creativity, critical thinking, and real-world solutions.</p>
+                  <p class="card-text"><small class="text-muted">Published on May 2, 2025</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 mb-5">
+          <div class="card border-0 shadow-lg">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/solar.jpg" class="img-fluid rounded-start news-img" alt="Featured News">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title text-warning">Solar-Powered Water Filter Wins Top Prize</h5>
+                  <p class="card-text">A team of JHS students developed a solar-powered water purification system, impressing judges and securing the fair’s grand prize.</p>
+                  <p class="card-text"><small class="text-muted">Published on April 15, 2025</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 mb-5">
+          <div class="card border-0 shadow-lg">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/career.jpg" class="img-fluid rounded-start news-img" alt="Featured News">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title text-warning">Career Day 2025 Features Top Ghanaian CEOs</h5>
+                  <p class="card-text">Students explored future paths as top executives from Accra visited to mentor and share insights into professional life after SHS.</p>
+                  <p class="card-text"><small class="text-muted">Published on April 10, 2025</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 mb-5">
+          <div class="card border-0 shadow-lg">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/books.jpeg" class="img-fluid rounded-start news-img" alt="Featured News">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title text-warning">SHS Reading Club Donates Books to Rural Schools</h5>
+                  <p class="card-text">Students from the school’s reading club collected and donated over 500 books to basic schools in underserved communities.</p>
+                  <p class="card-text"><small class="text-muted">Published on April 18, 2025</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 mb-5">
+          <div class="card border-0 shadow-lg">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="images/images2.jpeg" class="img-fluid rounded-start news-img" alt="Featured News">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title text-warning">SHS Students Launch Art & Innovation Gallery</h5>
+                  <p class="card-text">Visual Arts students unveiled an exhibition featuring recycled sculptures, digital art, and traditional Ghanaian painting techniques.</p>
+                  <p class="card-text"><small class="text-muted">Published on April 30, 2025</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- News Grid -->
+        <div class="container py-5">
+  <div id="newsGrid" class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- News Items -->
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/lab.jpeg" class="card-img-top" alt="News 1">
+        <div class="card-body">
+          <h5 class="card-title">New ICT Lab Commissioned</h5>
+          <p class="card-text">Our state-of-the-art ICT lab was officially launched last week with modern equipment and learning tools.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">April 28, 2025</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/debate1.jpg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">Inter-School Debate Champions</h5>
+          <p class="card-text">Our debate team emerged winners at the regional competition with their brilliant performance.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">April 20, 2025</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/NSMQ.jpg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">School Wins National Science & Math Quiz</h5>
+          <p class="card-text">Our science team clinched the top spot at the National Science Fair with their innovative solar water purifier.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">April 15, 2025</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/sport.jpg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">Inter-School Debate Champions</h5>
+          <p class="card-text">The school’s annual sports festival was a vibrant celebration of talent, teamwork, and athletic spirit.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">March 29, 2025</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/sworn.jpeg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">Head Prefect Sworn In</h5>
+          <p class="card-text">A colorful ceremony was held to officially induct our newly elected head prefect and school leaders.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">March 22, 2025</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/lib.jpg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">New Library Opens for Students</h5>
+          <p class="card-text">Our newly refurbished library now features digital resources and a serene reading space for all students.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted"> March 10, 2025</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/work.jpg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">Staff Development Workshop Held</h5>
+          <p class="card-text">Teachers attended a two-day training focused on modern teaching methods and digital learning tools.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">February 27, 2025</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/WASSCE.jpeg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">Students Excel in Wassce Mock Exams</h5>
+          <p class="card-text">Our SHS 3 students recorded impressive results in the recent WASSCE mock exams, setting a high benchmark.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">February 12, 2025</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/jhs_3_0.jpg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">Cultural Day Celebrated in Style</h5>
+          <p class="card-text">Students showcased Ghanaian traditions through food, dance, fashion, and storytelling during Cultural Day.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">January 30, 2025</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/VRA.jpg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">Inter-Class Quiz Competition Winners Announced</h5>
+          <p class="card-text">Class 2B emerged champions after a thrilling quiz contest that tested knowledge across all subjects.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">November 10, 2024</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/Donation.jpg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title"> School Receives Donation of Sanitary Kits</h5>
+          <p class="card-text">An NGO donated sanitary kits to promote health and hygiene among our female students.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted"> January 15, 2025</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/Code.jpg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">ICT Club Launches Coding Program</h5>
+          <p class="card-text">The ICT Club introduced an after-school coding initiative to teach students basic programming skills.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">December 18, 2024</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/Christmas.jpg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">Christmas Carol Night Draws Huge Crowd</h5>
+          <p class="card-text">The school choir lit up the night with powerful performances at the annual Christmas carol service.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">December 10, 2024</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/Trees.jpeg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">Environmental Club Plants 100 Trees</h5>
+          <p class="card-text">As part of a green initiative, students planted 100 trees on campus to mark National Tree Planting Day.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">November 25, 2024</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col news-item">
+      <div class="card h-100 shadow-sm">
+        <img src="images/lab donate.jpg" class="card-img-top" alt="News 2">
+        <div class="card-body">
+          <h5 class="card-title">Alumni Donate Science Lab Equipment</h5>
+          <p class="card-text">Former students donated microscopes, beakers, and other lab tools to support science education.</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">October 28, 2024</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more news items here, all with class="col news-item" -->
+  </div>
+
+  <!-- Pagination -->
+  <div class="d-flex justify-content-center mt-4">
+    <nav>
+      <ul class="pagination" id="pagination"></ul>
+    </nav>
+  </div>
+</div>
+
+  
+      <!-- Pagination -->
+      <div class="text-center mt-5" data-aos="fade-up">
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center" id="pagination">
+      <li class="page-item disabled" id="prev-btn"><a class="page-link" href="#">Previous</a></li>
+      <!-- Page numbers will be generated dynamically -->
+      <li class="page-item" id="next-btn"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+</div>
+
+    </div>
+  </section>
+  <!-- ======= End News Page ======= -->
+  
+ 
+ 
+  <!-- Footer -->
+  <footer class="text-light pt-5 pb-4">
+    <div class="container text-md-start">
+      <div class="row">
+        <!-- Company Info -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-warning"><i class="fas fa-school me-2"></i>University Practice SHS</h5>
+          <p><i class="fas fa-lightbulb me-2"></i>University Practice Senior High School — Committed to excellence and service to the community.</p>
+          <br>
+          <p><i class="fas fa-balance-scale me-2"></i>Motto: Service to the Community</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h5 class="text-warning"><i class="fas fa-link me-2"></i>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-home me-2"></i><a href="index.html">Home</a></li>
+            <li><i class="fas fa-user me-2"></i><a href="about.html">About</a></li>
+            <li><i class="fas fa-book me-2"></i><a href="academics.html">Academics</a></li>
+            <li><i class="fas fa-user-graduate me-2"></i><a href="admissions.html">Admissions</a></li>
+            <li><i class="fas fa-newspaper me-2"></i><a href="news.html">News</a></li>
+            <li><i class="fas fa-images me-2"></i><a href="gallery.html">Gallery</a></li>
+            <li><i class="fas fa-envelope me-2"></i><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-warning"><i class="fas fa-phone-alt me-2"></i>Contact</h5>
+          <p><i class="fas fa-map-marker-alt me-2"></i>Cape Coast, Ghana</p>
+          <p><i class="fas fa-phone me-2"></i>0242043499 / 0540380460</p>
+          <a href="#">
+            <p><i class="fas fa-envelope me-2"></i>info@upshs.com</p>
+          </a>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-warning"><i class="fas fa-newspaper me-2"></i>Newsletter</h5>
+
+          <form id="subscribeForm">
+            <div class="mb-2">
+              <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">
+              <i class="fas fa-paper-plane me-1"></i>Subscribe
+            </button>
+          </form>
+
+          <!-- Always render this element for JS to access -->
+          <p id="subscribeMessage" class="mt-2" style="display: none;"></p>
+
+          <h6 class="text-warning mt-4">Follow Us</h6>
+          <div>
+            <a href="https://facebook.com/p/Boss-Track-Engineering-Services-100063743118363/?_rdc=1&_rdr#"
+              class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://gh.linkedin.com/in/benjamin-mensah-709b7bb6" class="text-light"><i
+                class="fab fa-linkedin fa-lg"></i></a>
+          </div>
+        </div>
+
+        <script>
+          document.getElementById("subscribeForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const emailInput = this.querySelector("input[name='email']");
+            const successMessage = document.getElementById("subscribeMessage");
+            const email = emailInput.value.trim();
+
+            if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+              successMessage.textContent = "Please enter a valid email.";
+              successMessage.className = "mt-2 text-danger";
+              successMessage.style.display = "block";
+              return;
+            }
+
+            // Feedback: processing
+            successMessage.textContent = "Subscribing...";
+            successMessage.className = "mt-2 text-info";
+            successMessage.style.display = "block";
+
+            try {
+              const res = await fetch("subscribe.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: `email=${encodeURIComponent(email)}`
+              });
+
+              const text = await res.text(); // safer than res.json() in case of malformed response
+              let result;
+              try {
+                result = JSON.parse(text);
+              } catch {
+                throw new Error("Invalid JSON");
+              }
+
+              successMessage.textContent = result.message;
+              successMessage.className = `mt-2 ${result.status === "success" ? "text-success" : "text-danger"}`;
+
+              if (result.status === "success") {
+                emailInput.value = "";
+              }
+
+            } catch (err) {
+              console.error("Error:", err);
+              successMessage.textContent = "Something went wrong. Please try again.";
+              successMessage.className = "mt-2 text-danger";
+            }
+
+            setTimeout(() => {
+              successMessage.style.display = "none";
+            }, 4000);
+          });
+        </script>
+      </div>
+
+      <hr class="bg-warning">
+
+      <div class="d-md-flex justify-content-between align-items-center mt-3">
+        <p>&copy; 2025 University Practice SHS. All rights reserved.</p>
+        <div>
+          <a href="#" class="text-light me-3"><i class="fas fa-shield-alt me-1"></i>Privacy Policy</a>
+          <a href="#" class="text-light"><i class="fas fa-file-contract me-1"></i>Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script>
+        // Smooth scrolling for "Explore Programs" button
+document.querySelector('.btn-primary').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#programs').scrollIntoView({
+      behavior: 'smooth'
+    });
+  });  
+    </script>
+
+
+<script>
+  const itemsPerPage = 3;
+  const items = document.querySelectorAll('.news-item');
+  const pagination = document.getElementById('pagination');
+
+  function showPage(page) {
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+
+    items.forEach((item, index) => {
+      item.style.display = (index >= start && index < end) ? 'block' : 'none';
+    });
+  }
+
+  function setupPagination() {
+    const totalPages = Math.ceil(items.length / itemsPerPage);
+    pagination.innerHTML = '';
+
+    for (let i = 1; i <= totalPages; i++) {
+      const li = document.createElement('li');
+      li.classList.add('page-item');
+      li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+      li.addEventListener('click', (e) => {
+        e.preventDefault();
+        showPage(i);
+        document.querySelectorAll('.page-item').forEach(p => p.classList.remove('active'));
+        li.classList.add('active');
+      });
+      pagination.appendChild(li);
+    }
+
+    // Show first page by default
+    pagination.querySelector('li').classList.add('active');
+    showPage(1);
+  }
+
+  document.addEventListener('DOMContentLoaded', setupPagination);
+</script>
+
+
+</body>
+</html>

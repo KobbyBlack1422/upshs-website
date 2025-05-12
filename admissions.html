@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UP SHS | ADMISSION </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+ 
+
+  <style>
+    :root {
+      --blue-black: #0c1a2b;
+      --cream: #f9f4e8;
+      --main-blue: #0066cc;
+    }
+
+    html, body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--cream);
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    .navbar-toggler {
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    .navbar .nav-link {
+      position: relative;
+      padding-bottom: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #FFD700;
+      transition: width 0.3s;
+    }
+
+    .navbar .nav-link:hover::after,
+    .navbar .nav-link.active::after {
+      width: 100%;
+    }
+
+
+    .navbar {
+      background-color: #0f0c20 !important;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: white !important;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: #FFD700 !important;
+      /* Yellow */
+    }
+
+    .navbar .nav-item {
+      margin-left: 15px;
+    }
+
+    .navbar .nav-item:not(:first-child) {
+      margin-left: 15px;
+    }
+    
+    /* Admission Section */
+.admission-section {
+  background: linear-gradient(to right, #f3f4f6, #ffffff);
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2c3e50;
+}
+
+.admission-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.admission-text {
+  flex: 1 1 500px;
+}
+
+.admission-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  color: #1f2937;
+}
+
+.admission-text h2 i {
+  color: #f59e0b;
+  margin-right: 10px;
+}
+
+.admission-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.btn-admission {
+  background-color: #f59e0b;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-admission:hover {
+  background-color: #d97706;
+}
+
+.admission-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.admission-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+  
+  .admission-requirements-section {
+  background: linear-gradient(to left, #ffffff, #f9f9fc);
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 12px;
+}
+
+.admission-requirements-section h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.admission-requirements-section h3 i {
+  color: #e67e22;
+  margin-right: 10px;
+}
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.requirement-item {
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.requirement-item:hover {
+  transform: translateY(-5px);
+}
+
+.requirement-item i {
+  font-size: 30px;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+.requirement-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+  .fees-scholarships,
+  .important-dates {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+
+  /* Application Section Styling */
+.application-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f0f9ff, #e0ffe0);
+}
+
+.application-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.application-form,
+.application-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.application-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.application-form h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.application-form .form-group {
+  margin-bottom: 20px;
+}
+
+.application-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #16a085;
+}
+
+.btn-apply {
+  background-color: #16a085;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-apply:hover {
+  background-color: #138d75;
+}
+
+/* Image box same height as form */
+.application-process-section {
+  background: linear-gradient(to right, #f0f4f8, #e8f0fc);
+  padding: 60px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.application-process-section h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.application-process-section h3 i {
+  color: #3498db;
+  margin-right: 10px;
+}
+
+.application-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.step {
+  background-color: #ffffff;
+  border-radius: 10px;
+  flex: 1 1 200px;
+  padding: 20px;
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step i {
+  font-size: 30px;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+.step p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li, ol li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+.fees-scholarships-pro {
+  background: linear-gradient(to right, #fdfdfd, #f5f7fa);
+  padding: 60px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  margin: 60px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.fees-scholarships-pro .container {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.fees-scholarships-pro h3 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.scholarship-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.scholarship-content .icon-left {
+  font-size: 24px;
+  color: #f1c40f;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.scholarship-content p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.btn-learn-more {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: #f1c40f;
+  color: #2c3e50;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn-learn-more:hover {
+  background-color: #d4ac0d;
+  color: #fff;
+}
+
+
+  
+  .important-dates-section {
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin: 40px 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.important-dates {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.important-dates h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.dates-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dates-list li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: #ffffff;
+  padding: 18px 25px;
+  margin: 12px auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.dates-list li:hover {
+  transform: translateY(-5px);
+}
+
+.dates-list i {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: #16a085;
+  min-width: 30px;
+  text-align: center;
+}
+
+.dates-list .label {
+  font-weight: 600;
+  flex: 1;
+  text-align: left;
+  color: #34495e;
+}
+
+.dates-list .date {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+  
+  .contact-section {
+    background-color: #ffcc00;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .contact-section a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .contact-section a:hover {
+    color: #333;
+  }
+  
+  .contact-section p {
+    font-size: 1.2rem;
+  }
+  
+  .contact-section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+  
+
+footer {
+  background: #0f0c20;
+  color: #fff;
+  padding: 30px 0;
+}
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #ffc107;
+    }
+
+    footer ul li {
+      margin-bottom: 8px;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/University Practice logo.png" alt="UPSHS Logo" width="50" height="50"><br>
+        <span class="text-white">U.P.S.H.S</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link active" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <section id="admission" class="admission-section">
+    <div class="container">
+      <section class="admission-section">
+  <div class="container">
+    <div class="admission-content">
+      <div class="admission-text">
+        <h2 class="section-title"><i class="fas fa-university"></i> Admission to Our Programs</h2>
+        <p>
+          Welcome to the admissions page of our academic programs. We offer a wide variety of courses designed to help you reach your full potential. Explore the exciting opportunities we offer and learn how you can become part of our vibrant academic community.
+        </p>
+        <a href="#application-process" class="btn-admission">Start Application Process</a>
+      </div>
+      <div class="admission-image">
+        <img src="images/xpxp.jpg" alt="Students discussing" />
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+      <!-- Admission Requirements -->
+      <section class="admission-requirements-section">
+  <div class="container">
+    <h3><i class="fas fa-clipboard-check"></i> Admission Requirements</h3>
+    <div class="requirements-grid">
+      <div class="requirement-item">
+        <i class="fas fa-file-signature"></i>
+        <p>Completed application form</p>
+      </div>
+      <div class="requirement-item">
+        <i class="fas fa-graduation-cap"></i>
+        <p>High school diploma or equivalent</p>
+      </div>
+      <div class="requirement-item">
+        <i class="fas fa-file-alt"></i>
+        <p>Official transcripts from previous institutions</p>
+      </div>
+      <div class="requirement-item">
+        <i class="fas fa-user-friends"></i>
+        <p>Two recommendation letters</p>
+      </div>
+      <div class="requirement-item">
+        <i class="fas fa-globe"></i>
+        <p>Proof of English proficiency (for international students)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+      <!-- Application Process -->
+      <section class="application-process-section">
+  <div class="container">
+    <h3><i class="fas fa-list-check"></i> Application Process</h3>
+    <div class="application-steps">
+      <div class="step">
+        <i class="fas fa-file-alt"></i>
+        <p>Fill out the online application form.</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-file-upload"></i>
+        <p>Submit required documents (e.g., transcripts, recommendations).</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-user-check"></i>
+        <p>Attend an interview (if required).</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-envelope-open-text"></i>
+        <p>Wait for the admission decision.</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-user-edit"></i>
+        <p>Accept the offer and complete registration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+      <!-- Fees and Scholarships -->
+     <section class="fees-scholarships-pro">
+  <div class="container">
+    <h3><i class="fas fa-university"></i> Fees and Scholarships</h3>
+    <div class="scholarship-content">
+      <i class="fas fa-money-bill-wave icon-left"></i>
+      <p>
+        Our institution offers affordable and transparent tuition fees. We aim to make high-quality education accessible to all.
+      </p>
+    </div>
+    <div class="scholarship-content">
+      <i class="fas fa-graduation-cap icon-left"></i>
+      <p>
+        We provide a variety of scholarships based on academic excellence, financial need, and extracurricular achievements.
+      </p>
+    </div>
+    <a href="scholarships.html" class="btn-learn-more">
+      <i class="fas fa-arrow-right"></i> Learn More
+    </a>
+  </div>
+</section>
+
+
+  
+      <!-- Important Dates -->
+      <section class="important-dates-section">
+  <div class="important-dates">
+    <h3><i class="fas fa-calendar-alt"></i> Important Dates</h3>
+    <ul class="dates-list">
+      <li>
+        <i class="fas fa-hourglass-half"></i>
+        <span class="label">Application Deadline:</span>
+        <span class="date">July 15</span>
+      </li>
+      <li>
+        <i class="fas fa-comments"></i>
+        <span class="label">Interviews (if required):</span>
+        <span class="date">August 1 - August 15</span>
+      </li>
+      <li>
+        <i class="fas fa-envelope-open-text"></i>
+        <span class="label">Acceptance Notifications:</span>
+        <span class="date">September 1</span>
+      </li>
+      <li>
+        <i class="fas fa-play-circle"></i>
+        <span class="label">Start of Classes:</span>
+        <span class="date">October 1</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  
+      <!-- Contact Section -->
+      <div class="contact-section">
+        <h3>Need More Information?</h3>
+        <p>If you have any questions, please feel free to contact our admissions office at <a href="mailto:admissions@university.com">admissions@university.com</a> or call us at <strong>(123) 456-7890</strong>.</p>
+      </div>
+    </div>
+  </section>
+  
+<!-- Application Form Section -->
+<section class="application-section">
+  <div class="application-container">
+    <!-- Image (Right) -->
+    <div class="application-image">
+      <img src="images/admin.jpg" alt="Apply Now">
+    </div>
+
+    <!-- Application Form (Left) -->
+    <div class="application-form">
+      <h3><i class="fas fa-file-alt"></i> Apply Now</h3>
+      <form action="/submit-application" method="POST">
+        <div class="form-group">
+          <label for="name"><i class="fas fa-user"></i> Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="program"><i class="fas fa-graduation-cap"></i> Program Applying For</label>
+          <select id="program" name="program" required>
+            <option value="">Select a program</option>
+            <option value="ag">Agriculture (AGRIC. 101)</option>
+            <option value="ba">Business (BUS. 201)</option>
+            <option value="te">Technical (TECH. 301)</option>
+            <option value="he">Home Economics (HOME ECON. 401)</option>
+            <option value="va">Visual Arts (VIS. ARTS 402))</option>
+            <option value="ga">General Arts (GEN. ARTS 501)</option>
+            <option value="gs">General Science (GEN. SCI. 502)</option>
+            <option value="st">STEM (503)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="statement"><i class="fas fa-comment-dots"></i> Personal Statement</label>
+          <textarea id="statement" name="statement" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-apply">Submit Application</button>
+      </form>
+    </div>
+
+    
+  </div>
+</section>
+
+
+
+  
+ 
+ 
+  <!-- Footer -->
+  <footer class="text-light pt-5 pb-4">
+    <div class="container text-md-start">
+      <div class="row">
+        <!-- Company Info -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-warning"><i class="fas fa-school me-2"></i>University Practice SHS</h5>
+          <p><i class="fas fa-lightbulb me-2"></i>University Practice Senior High School — Committed to excellence and service to the community.</p>
+          <br>
+          <p><i class="fas fa-balance-scale me-2"></i>Motto: Service to the Community</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h5 class="text-warning"><i class="fas fa-link me-2"></i>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-home me-2"></i><a href="index.html">Home</a></li>
+            <li><i class="fas fa-user me-2"></i><a href="about.html">About</a></li>
+            <li><i class="fas fa-book me-2"></i><a href="academics.html">Academics</a></li>
+            <li><i class="fas fa-user-graduate me-2"></i><a href="admissions.html">Admissions</a></li>
+            <li><i class="fas fa-newspaper me-2"></i><a href="news.html">News</a></li>
+            <li><i class="fas fa-images me-2"></i><a href="gallery.html">Gallery</a></li>
+            <li><i class="fas fa-envelope me-2"></i><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-warning"><i class="fas fa-phone-alt me-2"></i>Contact</h5>
+          <p><i class="fas fa-map-marker-alt me-2"></i>Cape Coast, Ghana</p>
+          <p><i class="fas fa-phone me-2"></i>0242043499 / 0540380460</p>
+          <a href="#">
+            <p><i class="fas fa-envelope me-2"></i>info@upshs.com</p>
+          </a>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-warning"><i class="fas fa-newspaper me-2"></i>Newsletter</h5>
+
+          <form id="subscribeForm">
+            <div class="mb-2">
+              <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">
+              <i class="fas fa-paper-plane me-1"></i>Subscribe
+            </button>
+          </form>
+
+          <!-- Always render this element for JS to access -->
+          <p id="subscribeMessage" class="mt-2" style="display: none;"></p>
+
+          <h6 class="text-warning mt-4">Follow Us</h6>
+          <div>
+            <a href="https://facebook.com/p/Boss-Track-Engineering-Services-100063743118363/?_rdc=1&_rdr#"
+              class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://gh.linkedin.com/in/benjamin-mensah-709b7bb6" class="text-light"><i
+                class="fab fa-linkedin fa-lg"></i></a>
+          </div>
+        </div>
+
+        <script>
+          document.getElementById("subscribeForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const emailInput = this.querySelector("input[name='email']");
+            const successMessage = document.getElementById("subscribeMessage");
+            const email = emailInput.value.trim();
+
+            if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+              successMessage.textContent = "Please enter a valid email.";
+              successMessage.className = "mt-2 text-danger";
+              successMessage.style.display = "block";
+              return;
+            }
+
+            // Feedback: processing
+            successMessage.textContent = "Subscribing...";
+            successMessage.className = "mt-2 text-info";
+            successMessage.style.display = "block";
+
+            try {
+              const res = await fetch("subscribe.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: `email=${encodeURIComponent(email)}`
+              });
+
+              const text = await res.text(); // safer than res.json() in case of malformed response
+              let result;
+              try {
+                result = JSON.parse(text);
+              } catch {
+                throw new Error("Invalid JSON");
+              }
+
+              successMessage.textContent = result.message;
+              successMessage.className = `mt-2 ${result.status === "success" ? "text-success" : "text-danger"}`;
+
+              if (result.status === "success") {
+                emailInput.value = "";
+              }
+
+            } catch (err) {
+              console.error("Error:", err);
+              successMessage.textContent = "Something went wrong. Please try again.";
+              successMessage.className = "mt-2 text-danger";
+            }
+
+            setTimeout(() => {
+              successMessage.style.display = "none";
+            }, 4000);
+          });
+        </script>
+      </div>
+
+      <hr class="bg-warning">
+
+      <div class="d-md-flex justify-content-between align-items-center mt-3">
+        <p>&copy; 2025 University Practice SHS. All rights reserved.</p>
+        <div>
+          <a href="#" class="text-light me-3"><i class="fas fa-shield-alt me-1"></i>Privacy Policy</a>
+          <a href="#" class="text-light"><i class="fas fa-file-contract me-1"></i>Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script>
+        // Smooth scrolling for "Explore Programs" button
+document.querySelector('.btn-primary').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#programs').scrollIntoView({
+      behavior: 'smooth'
+    });
+  });  
+    </script>
+
+    <script>
+      // Simple form validation
+document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.querySelector('#name').value;
+    const email = document.querySelector('#email').value;
+    const program = document.querySelector('#program').value;
+  
+    if (name && email && program) {
+      alert('Application submitted successfully!');
+      // Optionally, send the data to the server or show a success message.
+    } else {
+      alert('Please fill out all the fields!');
+    }
+  });
+  
+    </script>
+
+</body>
+</html>

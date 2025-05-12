@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UP SHS | ACADEMICS </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+ 
+
+  <style>
+    :root {
+      --blue-black: #0c1a2b;
+      --cream: #f9f4e8;
+      --main-blue: #0066cc;
+    }
+
+    html, body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--cream);
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    .navbar-toggler {
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    .navbar .nav-link {
+      position: relative;
+      padding-bottom: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #FFD700;
+      transition: width 0.3s;
+    }
+
+    .navbar .nav-link:hover::after,
+    .navbar .nav-link.active::after {
+      width: 100%;
+    }
+
+
+    .navbar {
+      background-color: #0f0c20 !important;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: white !important;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: #FFD700 !important;
+      /* Yellow */
+    }
+
+    .navbar .nav-item {
+      margin-left: 15px;
+    }
+
+    .navbar .nav-item:not(:first-child) {
+      margin-left: 15px;
+    }    
+
+   /* Hero Section */
+.hero-section {
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    backdrop-filter: blur(5px);
+  }
+  
+  .hero-section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .hero-section .btn {
+    padding: 12px 24px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-section .btn:hover {
+    background-color: #ff9900;
+  }
+  
+  .programs-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.program-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+}
+
+.program-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.program-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.program-icon {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.program-card h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.program-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn.btn-secondary {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #e0a800;
+}
+
+  
+  /* Faculty Card Hover Effect */
+ /* Common Section Styling */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Curriculum Section */
+.curriculum-section {
+  background: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.curriculum-diagram img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Faculty Section */
+.faculty-section {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.faculty-card {
+  text-align: center;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.faculty-card img {
+  width: 100%;
+  max-width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.faculty-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.faculty-card p {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+  
+  /* Success Stories Section */
+  .success-stories-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .success-stories-carousel {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .story-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .story-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .story-card img:hover {
+    transform: scale(1.1);
+  }
+  
+  .story-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .story-card p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    background: linear-gradient(135deg, #ffcc00 0%, #ff9900 100%);
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-section .btn {
+    padding: 12px 30px;
+    background-color: #333;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-section .btn:hover {
+    background-color: #555;
+  }
+
+  .accreditation-section {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.accreditation-section .section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: 700;
+  position: relative;
+}
+
+.accreditation-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.accreditation-logos img {
+  max-height: 80px;
+  max-width: 160px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.accreditation-logos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  filter: grayscale(0%);
+}
+
+.main {
+  padding: 60px 0;
+}
+
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  footer {
+    background: #0f0c20;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+      footer a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+  
+      footer a:hover {
+        color: #ffc107;
+      }
+  
+      footer ul li {
+        margin-bottom: 8px;
+      }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/University Practice logo.png" alt="UPSHS Logo" width="50" height="50"><br>
+        <span class="text-white">U.P.S.H.S</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="academics.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+<div class="main">
+  <section id="hero" class="hero-section contact-hero text-white text-center py-5"
+ style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/banner.jpg') center/cover no-repeat;">
+  <div class="hero-content">
+    <h1 class="display-4 fw-bold" style="color: #ffc107;">Discover Our Academic Programs</h1>
+    <p>Unlock your potential with a variety of innovative and rigorous programs designed to shape your future.</p>
+    <a href="#programs" class="btn btn-primary">Explore Programs</a>
+  </div>
+</section>
+</div>
+
+
+<section id="programs" class="programs-section">
+  <div class="container">
+    <h2 class="section-title">Academic Programs</h2>
+    <div class="programs-grid">
+      
+      <!-- Example Program Card -->
+      <div class="program-card">
+        <img src="images/agriculture.jpg" alt="Agriculture" class="program-image">
+        <div class="program-content">
+          <i class="fas fa-seedling program-icon"></i>
+          <h3>Agriculture (AGRIC. 101)</h3>
+          <p>Master the fundamentals of modern agriculture and sustainable farming techniques.</p>
+          <a href="admissions.html" class="btn btn-secondary">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <img src="images/business.jpg" alt="Business" class="program-image">
+        <div class="program-content">
+          <i class="fas fa-briefcase program-icon"></i>
+          <h3>Business (BUS. 201)</h3>
+          <p>Gain critical skills in management, finance, and entrepreneurship to lead in today’s global marketplace.</p>
+          <a href="admissions.html" class="btn btn-secondary">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <img src="images/tech.jpg" alt="Business" class="program-image">
+        <div class="program-content">
+          <i class="fas fa-tools program-icon"></i>
+          <h3>Technical (TECH. 301)</h3>
+          <p>Acquire hands-on expertise in electricals, mechanics, building construction, and technical drawing. This program prepares students for both practical industry roles and further studies in engineering and technology-related fields.</p>
+          <a href="admissions.html" class="btn btn-secondary">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <img src="images/home economics.jpg" alt="Business" class="program-image">
+        <div class="program-content">
+          <i class="fas fa-utensils program-icon"></i>
+          <h3>Home Economics (HOME ECON. 401)</h3>
+          <p>Develop practical skills in nutrition, family care, textiles, interior design, and home management. This program equips students with knowledge to enhance everyday living and pursue careers in hospitality, catering, and social services.</p>
+          <a href="admissions.html" class="btn btn-secondary">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <img src="images/VA.jpg" alt="Business" class="program-image">
+        <div class="program-content">
+          <i class="fas fa-paint-brush program-icon"></i>
+          <h3>Visual Arts (VIS. ARTS 402)</h3>
+          <p>Unleash your creativity through drawing, painting, sculpture, graphic design, and other visual media. This program nurtures artistic talent and prepares students for careers in the creative and design industries.</p>
+          <a href="admissions.html" class="btn btn-secondary">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <img src="images/general art.jpg" alt="Business" class="program-image">
+        <div class="program-content">
+          <i class="fas fa-book program-icon program-icon"></i>
+          <h3>General Arts (GEN. ARTS 501)</h3>
+          <p>Engage with a wide range of disciplines including literature, history, government, languages, and social studies. This program builds critical thinking, communication, and analytical skills essential for careers in law, education, public service, and media.</p>
+          <a href="admissions.html" class="btn btn-secondary">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <img src="images/G science.jpg" alt="Business" class="program-image">
+        <div class="program-content">
+          <i class="fas fa-flask program-icon"></i>
+          <h3>General Science (GEN. SCI. 502)</h3>
+          <p>Explore the foundational principles of biology, chemistry, and physics while building strong analytical and problem-solving skills. This program is ideal for students aiming to pursue careers in medicine, engineering, environmental science, and research.</p>
+          <a href="admissions.html" class="btn btn-secondary">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <img src="images/Steam.jpg" alt="Business" class="program-image">
+        <div class="program-content">
+          <i class="fas fa-robot program-icon"></i>
+          <h3>STEM (503)</h3>
+          <p>An interdisciplinary program combining Science, Technology, Engineering, and Mathematics to foster innovation, critical thinking, and real-world problem solving. Ideal for students passionate about building the future through research, design, and advanced computation.</p>
+          <a href="admissions.html" class="btn btn-secondary">Apply Now</a>
+        </div>
+      </div>
+
+      <!-- Add similar blocks for the rest of the programs -->
+      
+    </div>
+  </div>
+</section>
+
+
+  
+
+  <section id="curriculum" class="curriculum-section">
+  <div class="container">
+    <h2 class="section-title">Curriculum Overview</h2>
+    <p class="section-description">
+      Our curriculum is designed to provide students with both theoretical and practical knowledge across a wide range of subjects.
+    </p>
+    <div class="curriculum-diagram">
+      <img src="images/SHS.jpg" alt="Curriculum Diagram">
+    </div>
+  </div>
+</section>
+
+<section id="faculty" class="faculty-section">
+  <div class="container">
+    <h2 class="section-title">Meet Our Faculty</h2>
+    <div class="faculty-grid">
+      <div class="faculty-card">
+        <img src="images/pic1.jpeg" alt="Dr. John Doe">
+        <h3>Dr. John Doe</h3>
+        <p>Professor of Computer Science</p>
+      </div>
+      <div class="faculty-card">
+        <img src="images/pic2.jpg" alt="Prof. Jane Smith">
+        <h3>Prof. Jane Smith</h3>
+        <p>Dean of Business School</p>
+      </div>
+      <!-- Add more faculty-card blocks here -->
+    </div>
+  </div>
+</section>
+
+  
+
+  <section id="accreditation" class="accreditation-section">
+  <div class="container">
+    <h2 class="section-title">Accreditation & Partnerships</h2>
+    <div class="accreditation-logos">
+      <img src="images/waec-Copy.jpg" alt="WAEC Logo">
+      <img src="images/accreditation.jpg" alt="Accreditation Logo">
+      <!-- Add more logos as needed -->
+    </div>
+  </div>
+</section>
+
+
+  <section id="success-stories" class="success-stories-section">
+    <div class="container">
+      <h2>Success Stories</h2>
+      <div class="success-stories-carousel">
+        <div class="story-card">
+          <img src="images/xpxp.jpg" alt="Student">
+          <h3>Emily Johnson</h3>
+          <p>Graduated with a degree in Business, now working as a Financial Analyst at XYZ Corp.</p>
+        </div>
+        <div class="story-card">
+          <img src="images/Ernest-Mawuli-1.jpg" alt="Student">
+          <h3>Michael Brown</h3>
+          <p>Graduated in Computer Science and now leading a team at a top tech company.</p>
+        </div>
+        <!-- Add more success stories -->
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section position-relative text-white text-center py-5"
+    style="background-image: url('images/banner.jpg'); background-size: cover; background-position: center;">
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100"
+      style="background-color: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <h2 class="mb-4 text-warning">Ready to Begin Your Journey?</h2>
+      <a href="admissions.html" class="btn btn-warning btn-lg">Apply Now</a>
+    </div>
+  </section>
+  
+
+ 
+ 
+  <!-- Footer -->
+  <footer class="text-light pt-5 pb-4">
+    <div class="container text-md-start">
+      <div class="row">
+        <!-- Company Info -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-warning"><i class="fas fa-school me-2"></i>University Practice SHS</h5>
+          <p><i class="fas fa-lightbulb me-2"></i>University Practice Senior High School — Committed to excellence and service to the community.</p>
+          <br>
+          <p><i class="fas fa-balance-scale me-2"></i>Motto: Service to the Community</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h5 class="text-warning"><i class="fas fa-link me-2"></i>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-home me-2"></i><a href="index.html">Home</a></li>
+            <li><i class="fas fa-user me-2"></i><a href="about.html">About</a></li>
+            <li><i class="fas fa-book me-2"></i><a href="academics.html">Academics</a></li>
+            <li><i class="fas fa-user-graduate me-2"></i><a href="admissions.html">Admissions</a></li>
+            <li><i class="fas fa-newspaper me-2"></i><a href="news.html">News</a></li>
+            <li><i class="fas fa-images me-2"></i><a href="gallery.html">Gallery</a></li>
+            <li><i class="fas fa-envelope me-2"></i><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-warning"><i class="fas fa-phone-alt me-2"></i>Contact</h5>
+          <p><i class="fas fa-map-marker-alt me-2"></i>Cape Coast, Ghana</p>
+          <p><i class="fas fa-phone me-2"></i>0242043499 / 0540380460</p>
+          <a href="#">
+            <p><i class="fas fa-envelope me-2"></i>info@upshs.com</p>
+          </a>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-warning"><i class="fas fa-newspaper me-2"></i>Newsletter</h5>
+
+          <form id="subscribeForm">
+            <div class="mb-2">
+              <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">
+              <i class="fas fa-paper-plane me-1"></i>Subscribe
+            </button>
+          </form>
+
+          <!-- Always render this element for JS to access -->
+          <p id="subscribeMessage" class="mt-2" style="display: none;"></p>
+
+          <h6 class="text-warning mt-4">Follow Us</h6>
+          <div>
+            <a href="https://facebook.com/p/Boss-Track-Engineering-Services-100063743118363/?_rdc=1&_rdr#"
+              class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://gh.linkedin.com/in/benjamin-mensah-709b7bb6" class="text-light"><i
+                class="fab fa-linkedin fa-lg"></i></a>
+          </div>
+        </div>
+
+        <script>
+          document.getElementById("subscribeForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const emailInput = this.querySelector("input[name='email']");
+            const successMessage = document.getElementById("subscribeMessage");
+            const email = emailInput.value.trim();
+
+            if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+              successMessage.textContent = "Please enter a valid email.";
+              successMessage.className = "mt-2 text-danger";
+              successMessage.style.display = "block";
+              return;
+            }
+
+            // Feedback: processing
+            successMessage.textContent = "Subscribing...";
+            successMessage.className = "mt-2 text-info";
+            successMessage.style.display = "block";
+
+            try {
+              const res = await fetch("subscribe.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: `email=${encodeURIComponent(email)}`
+              });
+
+              const text = await res.text(); // safer than res.json() in case of malformed response
+              let result;
+              try {
+                result = JSON.parse(text);
+              } catch {
+                throw new Error("Invalid JSON");
+              }
+
+              successMessage.textContent = result.message;
+              successMessage.className = `mt-2 ${result.status === "success" ? "text-success" : "text-danger"}`;
+
+              if (result.status === "success") {
+                emailInput.value = "";
+              }
+
+            } catch (err) {
+              console.error("Error:", err);
+              successMessage.textContent = "Something went wrong. Please try again.";
+              successMessage.className = "mt-2 text-danger";
+            }
+
+            setTimeout(() => {
+              successMessage.style.display = "none";
+            }, 4000);
+          });
+        </script>
+      </div>
+
+      <hr class="bg-warning">
+
+      <div class="d-md-flex justify-content-between align-items-center mt-3">
+        <p>&copy; 2025 University Practice SHS. All rights reserved.</p>
+        <div>
+          <a href="#" class="text-light me-3"><i class="fas fa-shield-alt me-1"></i>Privacy Policy</a>
+          <a href="#" class="text-light"><i class="fas fa-file-contract me-1"></i>Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script>
+        // Smooth scrolling for "Explore Programs" button
+document.querySelector('.btn-primary').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#programs').scrollIntoView({
+      behavior: 'smooth'
+    });
+  });  
+    </script>
+
+    <script>
+        // Smooth scrolling for "Explore Programs" button with delay
+document.querySelector('.btn-primary').addEventListener('click', function (e) {
+    e.preventDefault();
+    setTimeout(() => {
+      document.querySelector('#programs').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }, 300);
+  });
+    </script>
+
+</body>
+</html>
